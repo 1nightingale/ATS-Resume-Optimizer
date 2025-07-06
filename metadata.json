@@ -1,0 +1,6 @@
+{
+  "name": "ATS Resume Optimizer",
+  "description": "An application that reverse-engineers an ideal ATS profile from job descriptions and provides insights on how to improve your resume to match it.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
