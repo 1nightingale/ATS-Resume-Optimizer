@@ -1,3 +1,6 @@
+// Copyright (c) 2025 Tim Nightingale
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 import React from 'react';
 import { ArchiveBoxIcon, ArrowPathIcon } from './icons/Icons';
 

@@ -1,4 +1,7 @@
 
+// Copyright (c) 2025 Tim Nightingale
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 import React, { useState } from 'react';
 import { SearchIcon, ArrowRightIcon } from './icons/Icons';
 import { CachedAnalysis } from '../types';
@@ -45,7 +48,7 @@ const JobTitleInput: React.FC<JobTitleInputProps> = ({ onSubmit, previousSearche
           <ArrowRightIcon className="h-5 w-5" />
         </button>
       </form>
-      
+
       {previousSearches.length > 0 && (
         <div className="w-full max-w-lg mt-10">
           <h3 className="text-lg font-semibold text-gray-400 mb-4 text-center">Or select a recent analysis:</h3>

@@ -1,5 +1,8 @@
 {
   "name": "ats-resume-optimizer",
+  "license": "AGPL-3.0-or-later",
+  "repository": "https://github.com/1nightingale/ATS-Resume-Optimizer",
+  "homepage": "https://techntrek.co.uk",
   "private": true,
   "version": "0.0.0",
   "type": "module",

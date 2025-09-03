@@ -1,3 +1,5 @@
+// Copyright (c) 2025 Tim Nightingale
+// SPDX-License-Identifier: AGPL-3.0-or-later
 
 import React, { useState, useCallback } from 'react';
 import { AppStep, ATSProfile, AnalysisResult, CachedAnalysis } from './types';
@@ -37,11 +39,11 @@ const App: React.FC = () => {
       setProgress(10);
 
       const profile = await generateProfileFromWeb(title);
-      
+
       setProgress(90);
       setAtsProfile(profile);
       saveAnalysisToCache(title, profile);
-      
+
       setProgress(100);
 
       setTimeout(() => setStep(AppStep.AWAITING_RESUME), 1000);
@@ -75,7 +77,7 @@ const App: React.FC = () => {
   const handleRescan = useCallback(() => {
     runAnalysisProcess(jobTitle);
   }, [jobTitle, runAnalysisProcess]);
-  
+
   const handleResumeSubmit = useCallback(async (resumeText: string) => {
     if (!atsProfile) {
       handleError('ATS Profile is not available. Please start over.');
@@ -86,11 +88,11 @@ const App: React.FC = () => {
       setStep(AppStep.GENERATING_INSIGHTS);
       setLoadingMessage('Analyzing your resume...');
       setProgress(0);
-      
+
       const result = await compareResumeToProfile(resumeText, atsProfile);
       setProgress(50);
       setLoadingMessage('Generating personalized insights...');
-      
+
       setTimeout(() => {
         setAnalysisResult(result);
         setProgress(100);
@@ -102,7 +104,7 @@ const App: React.FC = () => {
       handleError(err instanceof Error ? err.message : 'An unknown error occurred while analyzing your resume.');
     }
   }, [atsProfile]);
-  
+
   const handleStart = useCallback(() => {
     const searches = getAllCachedAnalyses();
     searches.sort((a, b) => new Date(b.analyzedAt).getTime() - new Date(a.analyzedAt).getTime());
@@ -142,7 +144,7 @@ const App: React.FC = () => {
       case AppStep.AWAITING_RESUME:
         return <ResumeUpload onSubmit={handleResumeSubmit} jobTitle={jobTitle} />;
       case AppStep.SHOWING_INSIGHTS:
-        return analysisResult && atsProfile ? <InsightsDisplay result={analysisResult} profile={atsProfile} onReset={handleReset} jobTitle={jobTitle} /> : <div/>;
+        return analysisResult && atsProfile ? <InsightsDisplay result={analysisResult} profile={atsProfile} onReset={handleReset} jobTitle={jobTitle} /> : <div />;
       case AppStep.ERROR:
         return (
           <div className="text-center">
@@ -166,8 +168,8 @@ const App: React.FC = () => {
       <div className="w-full max-w-4xl mx-auto">
         <header className="text-center mb-10">
           <div className="flex items-center justify-center gap-4 mb-3">
-             <BriefcaseIcon className="h-10 w-10 text-indigo-400"/>
-             <SparklesIcon className="h-12 w-12 text-teal-400"/>
+            <BriefcaseIcon className="h-10 w-10 text-indigo-400" />
+            <SparklesIcon className="h-12 w-12 text-teal-400" />
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-teal-400 to-indigo-400">
             ATS Resume Optimizer
@@ -179,8 +181,8 @@ const App: React.FC = () => {
         <main className="bg-gray-800/50 backdrop-blur-sm p-6 sm:p-10 rounded-2xl shadow-2xl border border-gray-700">
           {renderContent()}
         </main>
-         <footer className="text-center mt-8 text-gray-500 text-sm">
-            <p>Powered by Gemini API. Designed for educational and demonstration purposes.</p>
+        <footer className="text-center mt-8 text-gray-500 text-sm">
+          <p>Powered by Gemini API. Designed for educational and demonstration purposes.</p>
         </footer>
       </div>
     </div>
