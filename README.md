@@ -41,3 +41,22 @@ To use your own Google Gemini API key, follow these steps:
 ## ⚠️ Disclaimer
 
 This is a demonstration application built for educational purposes. Always use your best judgment when tailoring your resume. AI-generated insights are a powerful tool, but they are not a substitute for professional career advice.
+
+## Licensing
+
+This project is licensed under the GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later). See LICENSE.
+
+Key points:
+- You may use, modify, and share this software under the AGPL.
+- If you run a modified or unmodified version of this software as a network service (e.g., SaaS), you must make the corresponding source code available to your users.
+- Please preserve attribution and the NOTICE file in redistributions.
+
+Commercial licensing is available if you want to use this project without AGPL obligations (e.g., to keep modifications private in a hosted service). Contact: [your email].
+
+## Attribution
+
+This project includes software developed by Tim Nightingale (https://www.linkedin.com/in/timnightingale). See NOTICE.
+
+## Privacy & Self‑Hosting
+
+This project is designed with a privacy-first approach: searches and resume data can be cached locally and processed client-side where feasible. Avoid uploading sensitive documents to third-party services. Review configuration before deployment.
