@@ -42,7 +42,13 @@ To use your own Google Gemini API key, follow these steps:
 
 This is a demonstration application built for educational purposes. Always use your best judgment when tailoring your resume. AI-generated insights are a powerful tool, but they are not a substitute for professional career advice.
 
-## Licensing
+## Licensing Overview
+
+ATS Resume Optimizer is available under two license types:
+- **AGPL-3.0-or-later** for open-source and community use.
+- **Commercial License** for proprietary, closed-source, or hosted (SaaS) deployments.
+
+## Open-Source Licensing
 
 This project is licensed under the GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later). See LICENSE.
 
@@ -51,7 +57,17 @@ Key points:
 - If you run a modified or unmodified version of this software as a network service (e.g., SaaS), you must make the corresponding source code available to your users.
 - Please preserve attribution and the NOTICE file in redistributions.
 
-Commercial licensing is available if you want to use this project without AGPL obligations (e.g., to keep modifications private in a hosted service). Contact: [your email].
+## Commercial Licensing
+
+If you wish to use this software without AGPL obligations—such as for proprietary, closed-source, or hosted (SaaS) deployments—a commercial license is available. The commercial license removes copyleft requirements and provides additional permissions for business use.
+
+To request or purchase a commercial license, please contact:
+- Tim Nightingale  
+- Email: 1timnightingale@gmail.com  
+- LinkedIn: [linkedin.com/in/1timnightingale](https://www.linkedin.com/in/1timnightingale)  
+- Website: [https://techntrek.co.uk](https://techntrek.co.uk)
+
+For details, see the LICENSE-COMMERCIAL file in this repository.
 
 ## Attribution
 
