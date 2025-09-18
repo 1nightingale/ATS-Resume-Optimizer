@@ -182,6 +182,17 @@ const App: React.FC = () => {
           {renderContent()}
         </main>
         <footer className="text-center mt-8 text-gray-500 text-sm">
+          <p>
+            &copy; 2025 Tim Nightingale &mdash; Licensed under{' '}
+            <a
+              href="https://www.gnu.org/licenses/agpl-3.0.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              AGPL-3.0-or-later
+            </a>
+          </p>
           <p>Powered by Gemini API. Designed for educational and demonstration purposes.</p>
         </footer>
       </div>
